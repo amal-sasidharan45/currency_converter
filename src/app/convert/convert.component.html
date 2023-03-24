@@ -1,0 +1,52 @@
+
+<h2 class="text-center">&nbsp; &nbsp; &nbsp; &nbsp; CURRENCY CONVERTER</h2>
+<div class="container w-75  ">
+    
+
+
+
+    <div class="row ">
+        <div class="col-md-4">
+
+        </div>
+        <div class=" body col-md-4  m-5 border border-2 rounded bg-light">
+            <div class="m-5">
+                <select #c1 class="form-select" aria-label="Default select example" id="countryf" (mouseleave)="changecurr(c1.value)">
+                   
+                    <option value="INR">INDIAN RUPEE</option>
+                    <option value="EUR"> EURO</option>
+                    <option value="USD">US DOLLAR</option>
+                    <option value="AED">ARAB EMIRATES DIRHAM</option>
+
+                  </select>
+              </div>
+
+                   <h6 class="text-center">TO</h6>
+
+              <div class="m-5">
+                <select #c2  class="form-select" aria-label="Default select example" id="countryf" (mouseleave)="tocurr(c2.value)">
+                   
+                  
+                    <option value="EURO"> EURO</option>
+                    <option value="INR">INDIAN RUPEE</option>
+                    <option value="USD">US DOLLAR</option>
+                    <option value="AED">ARAB EMIRATES DIRHAM</option>
+
+                  </select>
+              </div>
+              <div   class="col-md-4 ms-5 ps-5">
+                <button (click)="convert()" type="button" class="btn btn-success m-3">CONVERT</button>
+              </div>
+              <div class="result text-center"></div>
+              <h6 class="text-center">1{{fcurrency}}</h6>
+              <h6 class="text-center">=</h6>
+              <h6 class="text-center">{{output}}  {{scurrency}}</h6>
+    <div class="col-md-4">
+    
+    </div>
+    </div>
+    
+        </div>
+        
+
+
